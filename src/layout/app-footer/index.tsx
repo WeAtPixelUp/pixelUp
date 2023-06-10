@@ -9,6 +9,7 @@ import {
   faYoutube,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -27,17 +28,23 @@ const Index = () => {
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <p>
-                <a href="#!" className="text-reset text-decoration-none">
+                <a
+                  href="#what-do-we-do"
+                  className="text-reset text-decoration-none"
+                >
                   What do we do?
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset text-decoration-none">
+                <Link
+                  href="/services"
+                  className="text-reset text-decoration-none"
+                >
                   Our Services
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#" className="text-reset text-decoration-none">
                   Clients
                 </a>
               </p>
@@ -64,7 +71,7 @@ const Index = () => {
         <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faLinkedin} />
         <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faTelegram} />
         <FontAwesomeIcon icon={faYoutube} />
       </div>
     </footer>

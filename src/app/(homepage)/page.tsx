@@ -90,7 +90,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="section-two">
+      <div id="what-do-we-do" className="section-two">
         <div className="homepage__doing container d-flex justify-content-between align-items-center">
           <div className="homepage__doing__img-box">
             <Lottie options={animatedDoing} width={650} height={600} />
@@ -141,11 +141,14 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="section-four">
+      <div id="contact-us" className="section-four">
         <div className="homepage__contact container d-flex justify-content-between align-items-center">
           <div className="homepage__contact__content-box">
             <h1 className="heading-primary">Contact Us</h1>
-            <form>
+            <form
+              action="https://formsubmit.co/pixelup.co.in@gmail.com"
+              method="POST"
+            >
               <input type="text" id="name" placeholder="Name" />
               <input type="text" id="email" placeholder="Email" />
               <textarea
@@ -155,7 +158,21 @@ const Index = () => {
                 rows={8}
                 placeholder="Message"
               ></textarea>
-              <PrimaryButton title="Send" backgroundColor="#FF5757" />
+              <button
+                style={{
+                  backgroundColor: "#ff5757",
+                  padding: "0.8rem 1.5rem",
+                  borderRadius: "50px",
+                  border: "none",
+                  color: "#fff",
+                  fontFamily: "inherit",
+                  fontSize: "1.2rem",
+                  fontWeight: 700,
+                }}
+                type="submit"
+              >
+                Contact
+              </button>
             </form>
           </div>
           <div className="homepage__contact__img-box">

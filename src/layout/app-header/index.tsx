@@ -24,19 +24,19 @@ const Index = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" href="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <a className="nav-link" href="#what-do-we-do">
                 About
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link href="#" className="nav-link ">
+              <a href="#contact-us" className="nav-link ">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
           <PrimaryButton title="Join Our Team" backgroundColor="#ff5757" />
