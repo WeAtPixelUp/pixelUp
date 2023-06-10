@@ -10,8 +10,6 @@
   --font-style-bold: "Poppins-Bold";
 }
 
-@import "bootstrap/dist/css/bootstrap.css";
-
 /* width */
 ::-webkit-scrollbar {
   width: 0.4rem;
