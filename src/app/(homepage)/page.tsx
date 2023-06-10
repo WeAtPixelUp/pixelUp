@@ -105,7 +105,11 @@ const Index = () => {
               experience to take your company to the next level. Contact us
               today to learn more!
             </p>
-            <PrimaryButton title="Contact" backgroundColor="#282727" />
+            <PrimaryButton
+              destination="#contact-us"
+              title="Contact"
+              backgroundColor="#282727"
+            />
           </div>
         </div>
       </div>
