@@ -1,9 +1,7 @@
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Inter } from "next/font/google";
 import AppHeader from "../layout/app-header";
 import AppFooter from "../layout/app-footer";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pixel Up",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <AppHeader />
         {children}
         <AppFooter />

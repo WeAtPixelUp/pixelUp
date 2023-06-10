@@ -6,8 +6,17 @@ import contact from "../../assets/gif/contact.json";
 import Lottie from "react-lottie";
 import PrimaryButton from "../../components/primary-button";
 import { serviceDev, serviceMarketing, serviceUi } from "@/assets/images";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Index = () => {
+  const [index, setIndex] = useState(0);
+
+  // Function to toggle between titles
+  const toggleTitle = () => {
+    setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0));
+  };
+
   const animatedHero = {
     loop: true,
     autoplay: true,
@@ -41,12 +50,34 @@ const Index = () => {
     { id: 3, service: "Web/App Development", img: serviceDev },
   ];
 
+  const heroTitles = ["Design", "Development"];
+
+  const textVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="homepage">
       <div className="section-one">
         <div className="homepage__hero container d-flex justify-content-between align-items-center">
           <div className="homepage__hero__content-box">
-            <h1 className="heading-primary">Marketing and design</h1>
+            <h1 className="heading-primary--red">
+              Marketing and{" "}
+              <motion.span
+                key={heroTitles[index]}
+                initial="initial"
+                animate="animate"
+                variants={textVariants}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                onAnimationComplete={() =>
+                  setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0))
+                }
+                className="heading-primary--red"
+              >
+                {heroTitles[index]}
+              </motion.span>
+            </h1>
             <p className="paragraph-primary">
               We specialize in creating stunning web designs and effective
               marketing strategies to help businesses succeed. Let us take your
