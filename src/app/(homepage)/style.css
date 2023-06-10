@@ -1,0 +1,53 @@
+/* homepage hero css starts here */
+.section-one {
+  background: var(--color-primary);
+  height: 88vh;
+  display: flex;
+  align-items: center;
+}
+/* homepage hero css ends here */
+
+/* homepage doing css starts here */
+.section-two {
+  background: var(--color-tertiary);
+  display: flex;
+  align-items: center;
+}
+/* homepage doing css ends here */
+
+/* homepage services css starts here */
+.section-three {
+  background: var(--color-quarternary);
+  text-align: center;
+  padding: 3rem 0;
+}
+/* homepage services css ends here */
+
+/* homepage contact css starts here */
+.section-four {
+  background: var(--color-primary);
+}
+
+.homepage__contact__content-box form input,
+.homepage__contact__content-box form textarea {
+  display: block;
+  border: none;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2.6rem;
+  padding: 0.8rem;
+  margin-top: 3rem;
+  font-family: var(--font-style-regular);
+  color: var(--color-secondary);
+  width: 30rem;
+}
+
+.homepage__contact__content-box form input::placeholder,
+.homepage__contact__content-box form textarea::placeholder {
+  color: var(--color-secondary);
+  font-family: var(--font-style-regular);
+}
+
+.homepage__contact__content-box form textarea{
+  margin-bottom: 3rem;
+}
+/* homepage contact css ends here */
