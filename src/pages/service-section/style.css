@@ -1,0 +1,15 @@
+.section-services {
+  background-color: var(--color-tertiary);
+}
+
+.service-section-one,
+.service-section-two,
+.service-section-three {
+  height: 100vh;
+}
+
+.section-services__content-box div ul li {
+  font-family: var(--font-style-regular);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}

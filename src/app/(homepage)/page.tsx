@@ -8,14 +8,10 @@ import PrimaryButton from "../../components/primary-button";
 import { serviceDev, serviceMarketing, serviceUi } from "@/assets/images";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 const Index = () => {
   const [index, setIndex] = useState(0);
-
-  // Function to toggle between titles
-  const toggleTitle = () => {
-    setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0));
-  };
 
   const animatedHero = {
     loop: true,
@@ -45,9 +41,13 @@ const Index = () => {
   };
 
   const servicesArray = [
-    { id: 1, service: "UI/UX Design", img: serviceUi },
-    { id: 2, service: "Marketing", img: serviceMarketing },
-    { id: 3, service: "Web/App Development", img: serviceDev },
+    { id: "ui", service: "UI/UX Design", img: serviceUi },
+    { id: "marketing", service: "Marketing", img: serviceMarketing },
+    {
+      id: "development",
+      service: "Web/App Development",
+      img: serviceDev,
+    },
   ];
 
   const heroTitles = ["Design", "Development"];
@@ -115,21 +115,27 @@ const Index = () => {
         <div className="homepage__services container d-flex justify-content-between align-items-center">
           {servicesArray.map((service) => {
             return (
-              <div
+              <Link
+                className="text-decoration-none"
+                href={`/services?id=${service.id}`}
                 key={service.id}
-                className="card text-center"
-                style={{
-                  width: "22rem",
-                  backgroundColor: "rgba(255, 255, 255, 0.25)",
-                  borderRadius: "1rem",
-                  padding: "1rem",
-                }}
               >
-                <span className="card-img-top">{service.img}</span>
-                <div className="card-body mt-2">
-                  <p className="paragraph-primary">{service.service}</p>
+                <div
+                  className="card text-center"
+                  style={{
+                    width: "22rem",
+                    backgroundColor: "rgba(255, 255, 255, 0.25)",
+                    borderRadius: "1rem",
+                    padding: "1rem",
+                    cursor: "pointer",
+                  }}
+                >
+                  <span className="card-img-top">{service.img}</span>
+                  <div className="card-body mt-2">
+                    <p className="paragraph-primary">{service.service}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

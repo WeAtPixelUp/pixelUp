@@ -12,10 +12,13 @@ import {
 
 const Index = () => {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted">
+    <footer
+      style={{ backgroundColor: "#f5f5f7" }}
+      className="text-center text-lg-start text-muted pt-5 border-top"
+    >
       <section>
-        <div className="container text-center text-md-start mt-5">
-          <div className="row mt-3">
+        <div className="container text-center text-md-start">
+          <div className="row">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <Image src={favicon} alt="company" />
