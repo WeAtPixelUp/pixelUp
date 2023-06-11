@@ -6,6 +6,8 @@
 .service-section-two,
 .service-section-three {
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .section-services__content-box div ul li {

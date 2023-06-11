@@ -41,7 +41,7 @@ const Index = () => {
   };
 
   const servicesArray = [
-    { id: "ui", service: "UI/UX Design", img: serviceUi },
+    { id: "ui", service: "Design", img: serviceUi },
     { id: "marketing", service: "Marketing", img: serviceMarketing },
     {
       id: "development",
@@ -153,8 +153,8 @@ const Index = () => {
               action="https://formsubmit.co/pixelup.co.in@gmail.com"
               method="POST"
             >
-              <input type="text" id="name" placeholder="Name" />
-              <input type="text" id="email" placeholder="Email" />
+              <input name="name" type="text" id="name" placeholder="Name" />
+              <input name="email" type="text" id="email" placeholder="Email" />
               <textarea
                 name="message"
                 id="message"
