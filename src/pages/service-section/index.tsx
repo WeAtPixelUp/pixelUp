@@ -3,13 +3,32 @@ import "./style.css";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import Lottie from "react-lottie";
-import hero from "../../assets/gif/hero.json";
+import design from "../../assets/gif/design.json";
+import marketing from "../../assets/gif/marketing.json";
+import development from "../../assets/gif/development.json";
 
 const Index = () => {
-  const animatedHero = {
+  const animatedDesign = {
     loop: true,
     autoplay: true,
-    animationData: hero,
+    animationData: design,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const animatedMarketing = {
+    loop: true,
+    autoplay: true,
+    animationData: marketing,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const animatedDevelopment = {
+    loop: true,
+    autoplay: true,
+    animationData: development,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -30,7 +49,7 @@ const Index = () => {
       <div id="ui" className="service-section-one">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="section-services__img-box">
-            <Lottie options={animatedHero} height={500} width={500} />
+            <Lottie options={animatedDesign} width={650} />
           </div>
           <div className="section-services__content-box">
             <p className="paragraph-primary">
@@ -62,7 +81,7 @@ const Index = () => {
       <div id="marketing" className="service-section-two">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="section-services__img-box">
-            <Lottie options={animatedHero} height={500} width={500} />
+            <Lottie options={animatedMarketing} width={650} />
           </div>
           <div className="section-services__content-box">
             <p className="paragraph-primary">
@@ -96,7 +115,7 @@ const Index = () => {
       <div id="development" className="service-section-three">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="section-services__img-box">
-            <Lottie options={animatedHero} height={500} width={500} />
+            <Lottie options={animatedDevelopment} width={650} />
           </div>
           <div className="section-services__content-box">
             <p className="paragraph-primary">

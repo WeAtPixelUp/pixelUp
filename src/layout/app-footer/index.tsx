@@ -3,6 +3,7 @@ import favicon from "../../assets/images/favicon.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faTwitter,
   faFacebook,
   faInstagram,
   faLinkedin,
@@ -68,11 +69,21 @@ const Index = () => {
       </section>
 
       <div className="footer-social text-center p-4">
-        <FontAwesomeIcon icon={faFacebook} />
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faTelegram} />
-        <FontAwesomeIcon icon={faYoutube} />
+        <a href="https://twitter.com/PixelUp_India" target="_blank">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/pixelupindia/"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="https://www.instagram.com/pixelup.co.in/" target="_blank">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a href="https://www.youtube.com/@pixelupindia" target="_blank">
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
       </div>
     </footer>
   );
