@@ -95,6 +95,12 @@ body {
   margin: 3rem 0;
 }
 
+.paragraph-primary--services {
+  font-family: var(--font-style-regular);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
 .paragraph-primary--red {
   font-family: var(--font-style-regular);
   font-size: 1.2rem;

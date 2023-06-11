@@ -50,7 +50,7 @@ const Index = () => {
     },
   ];
 
-  const heroTitles = ["Design", "Development"];
+  const heroTitles = ["esign", "evelopment"];
 
   const textVariants = {
     initial: { opacity: 0, y: 20 },
@@ -63,13 +63,13 @@ const Index = () => {
         <div className="homepage__hero container d-flex justify-content-between align-items-center">
           <div className="homepage__hero__content-box">
             <h1 className="heading-primary--red">
-              Marketing and{" "}
+              Marketing and d
               <motion.span
                 key={heroTitles[index]}
                 initial="initial"
                 animate="animate"
                 variants={textVariants}
-                transition={{ duration: 0.6, delay: 0.6 }}
+                transition={{ duration: 2, delay: 2 }}
                 onAnimationComplete={() =>
                   setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0))
                 }
@@ -79,9 +79,10 @@ const Index = () => {
               </motion.span>
             </h1>
             <p className="paragraph-primary">
-              We specialize in creating stunning web designs and effective
-              marketing strategies to help businesses succeed. Let us take your
-              brand to the next level with our expertise and creativity.
+              Developing interactive web pages with stunning designs and
+              crafting effective marketing strategies to help businesses
+              succeed. Let us take your brand to the next level with our
+              expertise and creativity.
             </p>
           </div>
           <div className="homepage__hero__img-box">
@@ -125,18 +126,20 @@ const Index = () => {
                 key={service.id}
               >
                 <div
-                  className="card text-center"
+                  className="card text-center homepage__services--hover-effect"
                   style={{
                     width: "22rem",
                     backgroundColor: "rgba(255, 255, 255, 0.25)",
                     borderRadius: "1rem",
-                    padding: "1rem",
+                    padding: "2rem 0",
                     cursor: "pointer",
                   }}
                 >
-                  <span className="card-img-top">{service.img}</span>
-                  <div className="card-body mt-2">
-                    <p className="paragraph-primary">{service.service}</p>
+                  <span className="card-img-top mt-5">{service.img}</span>
+                  <div className="card-body">
+                    <p className="paragraph-primary--services">
+                      {service.service}
+                    </p>
                   </div>
                 </div>
               </Link>

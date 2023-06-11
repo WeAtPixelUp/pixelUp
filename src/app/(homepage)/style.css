@@ -12,6 +12,7 @@
   background: var(--color-tertiary);
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 /* homepage doing css ends here */
 
@@ -20,12 +21,22 @@
   background: var(--color-quarternary);
   text-align: center;
   padding: 3rem 0;
+  height: 100vh;
+}
+
+.homepage__services--hover-effect {
+  transition: all 0.2s ease-out;
+}
+
+.homepage__services--hover-effect:hover {
+  transform: scale(1.08);
 }
 /* homepage services css ends here */
 
 /* homepage contact css starts here */
 .section-four {
   background: var(--color-primary);
+  height: 100vh;
 }
 
 .homepage__contact__content-box form input,
@@ -47,7 +58,7 @@
   font-family: var(--font-style-regular);
 }
 
-.homepage__contact__content-box form textarea{
+.homepage__contact__content-box form textarea {
   margin-bottom: 3rem;
 }
 /* homepage contact css ends here */
