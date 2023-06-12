@@ -69,7 +69,7 @@ const Index = () => {
                 initial="initial"
                 animate="animate"
                 variants={textVariants}
-                transition={{ duration: 2, delay: 2 }}
+                transition={{ duration: 1.5, delay: 1.5 }}
                 onAnimationComplete={() =>
                   setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0))
                 }

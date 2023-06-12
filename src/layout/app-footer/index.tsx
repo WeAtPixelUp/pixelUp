@@ -1,15 +1,21 @@
 import "./style.css";
 import favicon from "../../assets/images/favicon.png";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faYoutube,
-  faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
+  // facebookSocial,
+  linkedInSocial,
+  instagramSocial,
+  youtubeSocial,
+  twitterSocial,
+} from "../../assets/images";
+// TODO: Not in use right now
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faTwitter,
+//   faInstagram,
+//   faLinkedin,
+//   faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const Index = () => {
@@ -70,19 +76,19 @@ const Index = () => {
 
       <div className="footer-social text-center p-4">
         <a href="https://twitter.com/PixelUp_India" target="_blank">
-          <FontAwesomeIcon icon={faTwitter} />
+          <span className="footer-social__icon">{twitterSocial}</span>
         </a>
         <a
           href="https://www.linkedin.com/company/pixelupindia/"
           target="_blank"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <span className="footer-social__icon">{linkedInSocial}</span>
         </a>
         <a href="https://www.instagram.com/pixelup.co.in/" target="_blank">
-          <FontAwesomeIcon icon={faInstagram} />
+          <span className="footer-social__icon">{instagramSocial}</span>
         </a>
         <a href="https://www.youtube.com/@pixelupindia" target="_blank">
-          <FontAwesomeIcon icon={faYoutube} />
+          <span className="footer-social__icon">{youtubeSocial}</span>
         </a>
       </div>
     </footer>
