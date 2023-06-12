@@ -57,6 +57,9 @@ const Index = () => {
     animate: { opacity: 1, y: 0 },
   };
 
+  const handleOnAnimationComplete = () =>
+    setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0));
+
   return (
     <div className="homepage">
       <div className="section-one">
@@ -69,10 +72,8 @@ const Index = () => {
                 initial="initial"
                 animate="animate"
                 variants={textVariants}
-                transition={{ duration: 1.5, delay: 1.5 }}
-                onAnimationComplete={() =>
-                  setIndex((prevIndex: number) => (prevIndex === 0 ? 1 : 0))
-                }
+                transition={{ duration: 1.5, delay: 0.5 }}
+                onAnimationComplete={handleOnAnimationComplete}
                 className="heading-primary--red"
               >
                 {heroTitles[index]}
@@ -164,7 +165,7 @@ const Index = () => {
                 cols={30}
                 rows={8}
                 placeholder="Message"
-              ></textarea>
+              />
               <button
                 style={{
                   backgroundColor: "#ff5757",

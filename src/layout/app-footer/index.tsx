@@ -2,20 +2,11 @@ import "./style.css";
 import favicon from "../../assets/images/favicon.png";
 import Image from "next/image";
 import {
-  // facebookSocial,
   linkedInSocial,
   instagramSocial,
   youtubeSocial,
   twitterSocial,
 } from "../../assets/images";
-// TODO: Not in use right now
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faTwitter,
-//   faInstagram,
-//   faLinkedin,
-//   faYoutube,
-// } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const Index = () => {
@@ -50,11 +41,12 @@ const Index = () => {
                   Our Services
                 </Link>
               </p>
-              <p>
+              {/* TODO: page about to create */}
+              {/* <p>
                 <a href="#" className="text-reset text-decoration-none">
                   Clients
                 </a>
-              </p>
+              </p> */}
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -75,19 +67,32 @@ const Index = () => {
       </section>
 
       <div className="footer-social text-center p-4">
-        <a href="https://twitter.com/PixelUp_India" target="_blank">
+        <a
+          href="https://twitter.com/PixelUp_India"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span className="footer-social__icon">{twitterSocial}</span>
         </a>
         <a
           href="https://www.linkedin.com/company/pixelupindia/"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="footer-social__icon">{linkedInSocial}</span>
         </a>
-        <a href="https://www.instagram.com/pixelup.co.in/" target="_blank">
+        <a
+          href="https://www.instagram.com/pixelup.co.in/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span className="footer-social__icon">{instagramSocial}</span>
         </a>
-        <a href="https://www.youtube.com/@pixelupindia" target="_blank">
+        <a
+          href="https://www.youtube.com/@pixelupindia"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span className="footer-social__icon">{youtubeSocial}</span>
         </a>
       </div>
