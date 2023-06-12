@@ -1,5 +1,5 @@
-.footer-social svg {
-  width: 2rem;
+.footer-social__icon svg {
+  margin: 0 1rem;
+  width: 3rem;
   height: auto;
-  margin: 0 0.5rem;
 }
