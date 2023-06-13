@@ -14,7 +14,7 @@ const Index = ({ title, backgroundColor, destination }: PropsType) => {
       className="btn-primary"
     >
       {title}
-    </a>
+    </a>  
   );
 };
 

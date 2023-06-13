@@ -62,3 +62,47 @@
   margin-bottom: 3rem;
 }
 /* homepage contact css ends here */
+
+@media screen and (max-width: 768px) {
+  .homepage__hero__img-box {
+    display: none;
+  }
+
+  .homepage__doing__img-box {
+    display: none;
+  }
+
+  .homepage__doing__content-box {
+    margin-left: 0 !important;
+  }
+
+  .homepage__services {
+    flex-direction: column;
+  }
+
+  .homepage__services a {
+    margin-bottom: 2rem;
+  }
+
+  .section-three {
+    height: 100%;
+  }
+
+  .homepage__contact {
+    display: block !important;
+    padding-top: 2rem;
+  }
+
+  .homepage__contact__img-box {
+    display: none;
+  }
+
+  .homepage__contact__content-box form input,
+  .homepage__contact__content-box form textarea {
+    width: 100%;
+  }
+
+  .homepage__contact__content-box h1 {
+    text-align: center;
+  }
+}
