@@ -86,16 +86,22 @@ const Index = () => {
               expertise and creativity.
             </p>
           </div>
-          <div className="homepage__hero__img-box">
-            <Lottie options={animatedHero} height={600} width={600} />
+          <div
+            style={{ width: "100%", height: "auto" }}
+            className="homepage__hero__img-box"
+          >
+            <Lottie options={animatedHero} height="100%" width="100%" />
           </div>
         </div>
       </div>
 
       <div id="what-do-we-do" className="section-two">
         <div className="homepage__doing container d-flex justify-content-between align-items-center">
-          <div className="homepage__doing__img-box">
-            <Lottie options={animatedDoing} width={650} height={600} />
+          <div
+            style={{ width: "100%", height: "auto" }}
+            className="homepage__doing__img-box"
+          >
+            <Lottie options={animatedDoing} width="100%" height="100%" />
           </div>
           <div className="homepage__doing__content-box ms-5">
             <h1 className="heading-primary">What do we do?</h1>

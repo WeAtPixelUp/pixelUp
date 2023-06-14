@@ -64,12 +64,12 @@
 /* homepage contact css ends here */
 
 @media screen and (max-width: 768px) {
-  .homepage__hero__img-box {
-    display: none;
+  .homepage__hero {
+    flex-direction: column;
   }
 
-  .homepage__doing__img-box {
-    display: none;
+  .homepage__doing {
+    flex-direction: column-reverse;
   }
 
   .homepage__doing__content-box {
