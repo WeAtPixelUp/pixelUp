@@ -63,7 +63,10 @@
 }
 /* homepage contact css ends here */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .section-one {
+    padding: 30rem 0;
+  }
   .homepage__hero {
     flex-direction: column;
   }

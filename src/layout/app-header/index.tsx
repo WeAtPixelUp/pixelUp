@@ -5,7 +5,7 @@ import PrimaryButton from "../../components/primary-button";
 
 const Index = () => {
   return (
-    <nav className="header navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="header navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container">
         <Link style={{ width: "12rem" }} className="navbar-brand" href="#">
           {brandingLogo}
