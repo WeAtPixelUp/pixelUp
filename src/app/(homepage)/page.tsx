@@ -97,11 +97,8 @@ const Index = () => {
 
       <div id="what-do-we-do" className="section-two">
         <div className="homepage__doing container d-flex justify-content-between align-items-center">
-          <div
-            style={{ width: "100%", height: "auto" }}
-            className="homepage__doing__img-box"
-          >
-            <Lottie options={animatedDoing} width="100%" height="100%" />
+          <div className="homepage__doing__img-box">
+            <Lottie options={animatedDoing} width={650} height={600} />
           </div>
           <div className="homepage__doing__content-box ms-5">
             <h1 className="heading-primary">What do we do?</h1>

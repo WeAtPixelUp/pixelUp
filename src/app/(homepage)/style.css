@@ -68,8 +68,8 @@
     flex-direction: column;
   }
 
-  .homepage__doing {
-    flex-direction: column-reverse;
+  .homepage__doing__img-box {
+    display: none;
   }
 
   .homepage__doing__content-box {
