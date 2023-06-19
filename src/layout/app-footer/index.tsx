@@ -28,6 +28,7 @@ const Index = () => {
               <p>
                 <a
                   href="#what-do-we-do"
+                  hrefLang="en"
                   className="text-reset text-decoration-none"
                 >
                   What do we do?
@@ -36,6 +37,7 @@ const Index = () => {
               <p>
                 <Link
                   href="/services"
+                  passHref hrefLang="en"
                   className="text-reset text-decoration-none"
                 >
                   Our Services
@@ -69,6 +71,7 @@ const Index = () => {
       <div className="footer-social text-center p-4">
         <a
           href="https://twitter.com/PixelUp_India"
+          hrefLang="en"
           target="_blank"
           rel="noreferrer"
         >
@@ -76,6 +79,7 @@ const Index = () => {
         </a>
         <a
           href="https://www.linkedin.com/company/pixelupindia/"
+          hrefLang="en"
           target="_blank"
           rel="noreferrer"
         >
@@ -83,6 +87,7 @@ const Index = () => {
         </a>
         <a
           href="https://www.instagram.com/pixelup.co.in/"
+          hrefLang="en"
           target="_blank"
           rel="noreferrer"
         >
@@ -90,6 +95,7 @@ const Index = () => {
         </a>
         <a
           href="https://www.youtube.com/@pixelupindia"
+          hrefLang="en"
           target="_blank"
           rel="noreferrer"
         >

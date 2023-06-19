@@ -4,8 +4,8 @@ import AppHeader from "../layout/app-header";
 import AppFooter from "../layout/app-footer";
 
 export const metadata = {
-  title: "PixelUp : Home",
-  description: "We provide web pages with stunning design and crafting effective marketing strategies to help businesses succeed.",
+  title: "PixelUp: Stunning Web Design, Development and Marketing Services for Businesses Worldwide",
+  description: "We offer development of web pages with stunning design and crafting effective marketing strategies to help businesses succeed.",
 };
 
 export default function RootLayout({
@@ -15,7 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <title>PixelUp : Design Development Marketing</title>
       <body>
         <AppHeader />
         {children}

@@ -1,3 +1,6 @@
-.header{
+.header {
     height: 12vh;
+}
+.nav-link:hover {
+    color: red;
 }

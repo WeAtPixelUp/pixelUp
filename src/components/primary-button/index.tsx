@@ -10,6 +10,7 @@ const Index = ({ title, backgroundColor, destination }: PropsType) => {
   return (
     <a
       href={destination}
+      hrefLang="en"
       style={{ backgroundColor: `${backgroundColor}` }}
       className="btn-primary"
     >
