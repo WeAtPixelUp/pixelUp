@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Index = () => {
   const [index, setIndex] = useState(0);
-
+// Lottie config
   const animatedHero = {
     loop: true,
     autoplay: true,
