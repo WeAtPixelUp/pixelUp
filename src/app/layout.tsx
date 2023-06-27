@@ -1,9 +1,7 @@
-"use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import AppHeader from "../layout/app-header";
 import AppFooter from "../layout/app-footer";
-import { useEffect } from "react";
 
 export const metadata = {
   title:
@@ -17,10 +15,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
-
   return (
     <html lang="en">
       <body>

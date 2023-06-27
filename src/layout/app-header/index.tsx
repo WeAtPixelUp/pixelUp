@@ -1,9 +1,15 @@
+"use client";
 import "./style.css";
 import { brandingLogo } from "@/assets/images";
+import { useEffect } from "react";
 import Link from "next/link";
 import PrimaryButton from "../../components/primary-button";
 
 const Index = () => {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   return (
     <nav className="header navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container">
