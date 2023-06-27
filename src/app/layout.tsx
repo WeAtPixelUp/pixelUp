@@ -1,11 +1,12 @@
 "use client";
+import { Metadata } from "next";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { useEffect } from "react";
 import AppHeader from "../layout/app-header";
 import AppFooter from "../layout/app-footer";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Pixel Up",
   description: "Service based web agency",
 };
