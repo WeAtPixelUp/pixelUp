@@ -119,7 +119,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="section-three">
+      <div id="services" className="section-three">
         <h1 className="heading-primary mb-5">Our Services</h1>
         <div className="homepage__services container d-flex justify-content-between align-items-center">
           {servicesArray.map((service) => {

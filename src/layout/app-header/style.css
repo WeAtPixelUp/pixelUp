@@ -1,3 +1,19 @@
-.header{
-    height: 12vh;
+.header__logo-box svg {
+  width: inherit;
+  height: inherit;
+}
+
+.header__logo-box {
+  width: 8rem;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.hide.show {
+  opacity: 1;
+  visibility: visible;
 }
