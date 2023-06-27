@@ -52,7 +52,7 @@ const Index = () => {
             <Lottie options={animatedDesign} width={650} />
           </div>
           <div className="section-services__content-box">
-            <h1 className="heading-primary">Design Service</h1>
+            <h2 className="heading-primary">Design Service</h2>
             <p className="paragraph-primary">
               Design That Pops: Unleash your brand&apos;s potential with our
               vibrant and captivating Design Services. Ignite your visuals, make
@@ -85,7 +85,7 @@ const Index = () => {
             <Lottie options={animatedMarketing} width={550} />
           </div>
           <div className="section-services__content-box">
-            <h1 className="heading-primary">Marketing Service</h1>
+            <h2 className="heading-primary">Marketing Service</h2>
             <p className="paragraph-primary">
               Boost Your Business&apos;s Online Presence: Dominate search
               engines, engage your audience, and skyrocket your success with
@@ -120,7 +120,7 @@ const Index = () => {
             <Lottie options={animatedDevelopment} width={650} />
           </div>
           <div className="section-services__content-box">
-            <h1 className="heading-primary">Development Service</h1>
+            <h2 className="heading-primary">Development Service</h2>
             <p className="paragraph-primary">
               Revolutionize Your Web Presence: Harness the Full Potential of Web
               Development for Next-Level Digital Solutions. Empower Your

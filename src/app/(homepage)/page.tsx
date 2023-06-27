@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Index = () => {
   const [index, setIndex] = useState(0);
-// Lottie config
+  // Lottie config
   const animatedHero = {
     loop: true,
     autoplay: true,
@@ -65,7 +65,7 @@ const Index = () => {
       <div className="section-one">
         <div className="homepage__hero container d-flex justify-content-between align-items-center">
           <div className="homepage__hero__content-box">
-            <h1 className="heading-primary--red">
+            <h2 className="heading-primary--red">
               Marketing and d
               <motion.span
                 key={heroTitles[index]}
@@ -78,7 +78,7 @@ const Index = () => {
               >
                 {heroTitles[index]}
               </motion.span>
-            </h1>
+            </h2>
             <p className="paragraph-primary">
               Developing interactive web pages with stunning designs and
               crafting effective marketing strategies to help businesses
@@ -110,7 +110,7 @@ const Index = () => {
               experience to take your company to the next level. Contact us
               today to learn more!
             </p>
-            <PrimaryButton                                                                                                    
+            <PrimaryButton
               destination="#contact-us"
               title="Contact"
               backgroundColor="#282727"
@@ -120,14 +120,15 @@ const Index = () => {
       </div>
 
       <div id="services-home" className="section-three">
-        <h1 className="heading-primary mb-5">Our Services</h1>
+        <h2 className="heading-primary mb-5">Our Services</h2>
         <div className="homepage__services container d-flex justify-content-between align-items-center">
           {servicesArray.map((service) => {
             return (
               <Link
                 className="text-decoration-none"
                 href={`/services?id=${service.id}`}
-                passHref hrefLang="en"
+                passHref
+                hrefLang="en"
                 key={service.id}
               >
                 <div
@@ -156,19 +157,32 @@ const Index = () => {
       <div id="contact-us" className="section-four">
         <div className="homepage__contact container d-flex justify-content-between align-items-center">
           <div className="homepage__contact__content-box">
-            <h1 className="heading-primary">Contact Us</h1>
+            <h2 className="heading-primary">Contact Us</h2>
             <form
               action="https://formsubmit.co/pixelup.co.in@gmail.com"
               method="POST"
             >
-              <input name="name" type="text" id="name" placeholder="Name" />
-              <input name="email" type="text" id="email" placeholder="Email" />
+              <input
+                name="name"
+                type="text"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                name="email"
+                type="text"
+                id="email"
+                placeholder="Email"
+                required
+              />
               <textarea
                 name="message"
                 id="message"
                 cols={30}
                 rows={8}
                 placeholder="Message"
+                required
               />
               <button
                 style={{

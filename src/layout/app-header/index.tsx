@@ -7,7 +7,13 @@ const Index = () => {
   return (
     <nav className="header navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container">
-        <Link style={{ width: "12rem" }} className="navbar-brand" href="#" passHref hrefLang="en">
+        <Link
+          style={{ width: "12rem" }}
+          className="navbar-brand header__logo-box"
+          href="#"
+          passHref
+          hrefLang="en"
+        >
           {brandingLogo}
         </Link>
         <button
@@ -24,22 +30,28 @@ const Index = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="/" passHref hrefLang="en">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                href="/"
+                passHref
+                hrefLang="en"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#what-do-we-do"  hrefLang="en">
+              <a className="nav-link" href="#what-do-we-do" hrefLang="en">
                 About
               </a>
             </li>
-             <li className="nav-item">
-              <a className="nav-link" href="#services-home"  hrefLang="en">
+            <li className="nav-item">
+              <a className="nav-link" href="#services-home" hrefLang="en">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contact-us" className="nav-link "  hrefLang="en">
+              <a href="#contact-us" className="nav-link " hrefLang="en">
                 Contact
               </a>
             </li>
